@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Heart Disease Prediction</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../static/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../static/js/cufon-yui.js"></script>
+<script type="text/javascript" src="../static/js/arial.js"></script>
+<script type="text/javascript" src="../static/js/cuf_run.js"></script>
+<script type="text/javascript" src="../static/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../static/js/radius.js"></script>
+<style type="text/css">
+<!--
+.style4 {color: #000000}
+.style5 {font-size: 18px}
+.style10 {font-size: large; font-weight: bold; }
+.style11 {color: #CC3300;
+	font-weight: bold;
+	font-size: x-large;
+}
+.style12 {color: #61c0ec}
+-->
+</style>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">Heart Disease Prediction<small></small></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="menu_nav">
+        <ul>
+          <li><a href="{{ url_for('homepage')}}">Home</a></li>
+		  <li class="active"><a href="{{ url_for('classification')}}">Prediction</a></li>
+		  <li><a href="{{ url_for('graph')}}">Performance Graph</a></li>
+        </ul>
+        <div class="searchform"></div>
+      </div>
+      <div class="clr"></div>
+      <img src="../static/images/heart.jpg" width="970" height="260" alt="" /> </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+       
+          <h2 align="center">Naive Bayes Classifier - Results </h2>
+          <table width="511" height="150" border="0" align="center">
+            <tr>
+              <td width="563"><div align="center">
+                  <div class="msg style4">
+                    <p>
+                      <label>
+                      <textarea name="textarea" cols="68" rows="20">Test data  0  is  normal
+Test data  1  is  Heart Disease
+Test data  2  is  Heart Disease
+Test data  3  is  normal
+Test data  4  is  normal
+Test data  5  is  normal
+Test data  6  is  normal
+Test data  7  is  normal
+Test data  8  is  normal
+Test data  9  is  normal
+Test data  10  is  normal
+Test data  11  is  Heart Disease
+Test data  12  is  normal
+Test data  13  is  Heart Disease
+Test data  14  is  Heart Disease
+Test data  15  is  Heart Disease
+Test data  16  is  normal
+Test data  17  is  Heart Disease
+Test data  18  is  normal
+Test data  19  is  Heart Disease
+Test data  20  is  Heart Disease
+Test data  21  is  normal
+Test data  22  is  Heart Disease
+Test data  23  is  normal
+Test data  24  is  Heart Disease
+Test data  25  is  normal
+Test data  26  is  normal
+Test data  27  is  Heart Disease
+Test data  28  is  Heart Disease
+Test data  29  is  Heart Disease
+Test data  30  is  Heart Disease
+Test data  31  is  normal
+Test data  32  is  Heart Disease
+Test data  33  is  Heart Disease
+Test data  34  is  Heart Disease
+Test data  35  is  Heart Disease
+Test data  36  is  normal
+Test data  37  is  Heart Disease
+Test data  38  is  normal
+Test data  39  is  normal
+Test data  40  is  normal
+Test data  41  is  Heart Disease
+Test data  42  is  Heart Disease
+Test data  43  is  normal
+Test data  44  is  Heart Disease
+Test data  45  is  Heart Disease
+Test data  46  is  Heart Disease
+Test data  47  is  normal
+Test data  48  is  normal
+Test data  49  is  Heart Disease
+Test data  50  is  Heart Disease
+Test data  51  is  Heart Disease
+Test data  52  is  Heart Disease
+Test data  53  is  Heart Disease
+Test data  54  is  Heart Disease
+Test data  55  is  normal
+Test data  56  is  Heart Disease
+Test data  57  is  Heart Disease
+Test data  58  is  Heart Disease
+Test data  59  is  Heart Disease
+Test data  60  is  Heart Disease
+Test data  61  is  Heart Disease
+Test data  62  is  Heart Disease
+Test data  63  is  Heart Disease
+Test data  64  is  Heart Disease
+Test data  65  is  Heart Disease
+Test data  66  is  Heart Disease
+Test data  67  is  normal
+Test data  68  is  Heart Disease
+Test data  69  is  Heart Disease
+Test data  70  is  normal
+Test data  71  is  Heart Disease
+Test data  72  is  Heart Disease
+Test data  73  is  normal
+Test data  74  is  normal
+Test data  75  is  Heart Disease
+Test data  76  is  normal
+Test data  77  is  Heart Disease
+Test data  78  is  Heart Disease
+Test data  79  is  normal
+Test data  80  is  normal
+Test data  81  is  normal
+Test data  82  is  normal
+Test data  83  is  Heart Disease
+Test data  84  is  normal
+Test data  85  is  Heart Disease
+Test data  86  is  normal
+Test data  87  is  Heart Disease
+Test data  88  is  Heart Disease
+Test data  89  is  Heart Disease
+Test data  90  is  normal
+Test data  91  is  Heart Disease
+Test data  92  is  Heart Disease
+Test data  93  is  normal
+Test data  94  is  Heart Disease
+Test data  95  is  normal
+Test data  96  is  normal
+Test data  97  is  normal
+Test data  98  is  Heart Disease
+Test data  99  is  normal</textarea>
+                      </label>
+                    </p>
+                </div>
+              </div></td>
+            </tr>
+          </table>
+          <h2 align="center"><span class="style12"><img src="../static/images/naivebayes.png" width="495" height="484" /></span></h2>
+      </div>
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">Menu Options </h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><a href="{{ url_for('homepage')}}">Home</a></li>
+			<li><a href="{{ url_for('preprocessing')}}">Preprocessing</a></li>
+			<li><a href="{{ url_for('classification')}}">Heart Disease Prediction</a></li>
+			<li><a href="{{ url_for('naivebayes')}}">Naive Bayes Classifier</a></li>
+			<li><a href="{{ url_for('svm')}}">Support Vector Machine</a></li>
+			<li><a href="{{ url_for('knn')}}">KNN Classifier</a></li>
+			<li><a href="{{ url_for('hybrid')}}">Hybrid Ensemble Classifier</a></li>
+			<li><a href="{{ url_for('graph')}}">Performance Graph</a></li>
+          </ul>
+        </div>
+        <div class="gadget"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <div class="clr">
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE SOURCE -->
+<div align=center></div>
+</body>
+</html>
